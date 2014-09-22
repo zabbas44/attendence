@@ -1,0 +1,141 @@
+/* 
+    Document   : company_admin
+    Created on : Jun 28, 2013, 4:55:13 PM
+    Author     : smkhan
+    Description: Purpose of the stylesheet follows.
+*/
+
+
+body
+{
+   background-color: #0C3E4D !important;
+}
+
+
+
+root { 
+    display: block;
+}
+
+/* Header Section */
+
+.header_sa {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    background: #2766AD url(../images/bg_header.jpg);
+    height: 130px;
+}
+
+.header_sa .header_container {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.header_sa .header_container_wrapper {
+    float:left;
+    width: 100%;
+}
+
+.header_sa .header_btns {
+    float: right;
+    margin-left: 20px;
+}
+
+.header_sa .header_logo {
+    float: left;
+}
+
+.header_sa .welcome_text {
+    float: right;
+    max-width: 300px;
+    color: whitesmoke;
+    padding: 0 !important;
+}
+
+.header_sa .welcome_text span {
+    float: left;
+    font-size: 14px;
+}
+
+/*-- End Header Section --*/
+
+
+/* Main Contents */
+
+.wrapper_top {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+/*-- End Main Contents --*/
+
+/* Footer Section */
+
+.footer_sa {
+    width: 100%;
+    height: 30px;
+    background: lightgray url(../images/bg_footer.jpg);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_sa .footer_text_container {
+    top: 50%;
+    margin: 0.5em;
+    text-align: right;
+    margin-right: 5%;
+    font-size: 11px;
+    color: #747272;
+    padding: 0px !important;
+}
+
+/*-- End Footer Section --*/
+
+.bg-btn
+{
+    background-color:#16AB96;
+}
+.dataTables_filter input, .dataTables_length select
+{
+   background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%; 
+}
+.bg-sw
+{
+    background-color: whitesmoke;
+}
+.font-red
+{
+    color:red;
+}
+.font-20
+{
+    font-size: 20px;
+}
+.bg-pcnl
+{
+    color:#0C3E4D;
+}
+.ul li dataTables_paginate
+{
+float:left;
+}
+.logo-adjuster
+{
+    margin-top: 5px;
+}
