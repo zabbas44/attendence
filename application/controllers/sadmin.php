@@ -15,6 +15,14 @@ class sadmin extends CI_Controller {
         {
             $this->load->view('sadmin/base');
         }
+        public function add_user()
+        {
+            $this->load->view('sadmin/base');
+        }
+        public function view_log()
+        {
+            $this->load->view('sadmin/base');
+        }        
         
 
         

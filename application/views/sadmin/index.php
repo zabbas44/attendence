@@ -9,7 +9,7 @@
                         <h3 class="panel-title"><b>Admin Login</b></h3>
                     </div>
                     <div class="panel-body">
-                        <form action="" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
+                        <form action="<?php echo base_url(); ?>sadmin/crud" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
                         <div class="admin_login_form">
                             <br>
                             <label>Admin Name</label>
@@ -20,8 +20,12 @@
                             <br>
 
                                                                 <br>
-                                                                    <div class="forgot_pass">
-                                        <span><input class="btn btn-bg" type="submit" value="Login"></span> <a class="btn btn-danger" href="">Forgot Password?</a>
+                                    <div class="forgot_pass">
+                                        <a href="<?php base_url()?>sadmin/crud">
+                                            <button class="btn btn-bg"/>Login</button>
+                                        </a>    
+                                       
+                                        <a class="btn btn-danger" href="">Forgot Password?</a>
                                     </div>
                                                             </div>
                     </form>

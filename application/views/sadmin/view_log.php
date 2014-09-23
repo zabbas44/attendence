@@ -6,24 +6,33 @@
                 <th>Name</th>
                 <th>Designation</th>
                 <th>Joining Date</th>
-                <th>Action</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Total Hours</th>
                 
+                                
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>danish</td>
-                <td>senior developer</td>
+                <td>senior Developer</td>
                 <td>13-13-13</td>
-                <td>     
+                <td>23-9-14</td>
+                <td>1pm</td>
+                <td>10pm</td>
+                <td>9</td>
+<!--                <td>     
         <div class="row">
     <div class="col-lg-12" >
     <button class="btn btn-success  " onsubmit="">Edit</button>
     &nbsp;
     <button class="btn btn-danger" onsubmit="" >Delete</button>
     </div>
-</div></td>
+</div>
+                </td>-->
       </tr>  
 </tbody>
  
@@ -40,12 +49,8 @@
     </table>
 <div class="row">
     <div class="col-lg-12" >
-    <button class="btn btn-success" >Submit Changes</button>
-    <a href="<?php echo base_url() ?>sadmin/view_log">
-    <button class="btn btn-success float-right" style="margin-left: 10px" >View Log</button>
-    </a>
-    <a href="<?php echo base_url() ?>sadmin/add_user">
-    <button class="btn btn-success float-right"> Add New User</button>
+    <a href="<?php echo base_url(); ?>sadmin/crud">
+    <button class="btn btn-success">Back To Admin</button>
     </a>
     </div>
 </div>
