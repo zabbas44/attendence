@@ -49,6 +49,23 @@ body {
     background-repeat: repeat;
 
 }
-
+.margntp10
+{
+    margin-top: 10px
+}
+.margnbtm10
+{
+    margin-bottom: 15px
+}
+.btn-bg
+{
+    background-color: #7ac5cd;
+    color: white;
+}
+.marginlr30
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 

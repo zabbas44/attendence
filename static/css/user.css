@@ -8,7 +8,7 @@
 
 body
 {
-   background-color: 	#7ac5cd ;
+   background-color: 	#f0f8ff;
 }
 
 
@@ -23,7 +23,7 @@ root {
     width: 100%;
     float: left;
     margin-bottom: 20px;
-    
+    background: #2766AD url(../images/bg_header.jpg);
     height: 130px;
 }
 

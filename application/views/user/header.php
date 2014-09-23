@@ -1,6 +1,5 @@
 <div class="col-lg-12  " style="height:70px; background-color: orange">
-    <!--<h2 style="padding-left:200px"> Mad Devz Attendence System<h3>-->
-
+    
     <div class="col-lg-2 col-sm-2 col-xs-4 col-md-2" >
         <a href="#">
             <img src="<?php echo base_url(); ?>static/images/logomd.png" class="logo-adjuster" alt="logo-header" />
