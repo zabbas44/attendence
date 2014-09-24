@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>User - Reset Password</title>
+        <title>Admin - Reset Password</title>
         
         
         <script type="text/javascript">
@@ -42,10 +42,10 @@
         <div class="col-lg-6">
      <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><b>User Password Reset</b></h3>
+                        <h3 class="panel-title"><b>Admin Password Reset</b></h3>
                     </div>
                     <div class="panel-body">
-                        <form action="<?php echo base_url()?>user/password_changed" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
+                        <form action="<?php echo base_url()?>sadmin/password_changed" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
                         <div class="admin_login_form">
                             <br>
                             <label>New Password</label>
@@ -56,8 +56,8 @@
                             <br/>
                             <br/>
 
-                                        <a href="<?php echo base_url()?>user/password_changed">
-                                        <input type="submit" class="btn btn-success" value="Reset" />
+                                        <a href="<?php echo base_url()?>sadmin/password_changed">
+                                        <input type="submit" class="btn btn-bg" value="Reset" />
                                         </a>
 
                             </div>

@@ -13,6 +13,11 @@
         <input type="hidden" value="#" id="base_url" />
 
     </div>
+     <div class="float-right" style="padding-top: 7px;">
+        <a href="<?php echo base_url(); ?>sadmin ">
+            <img src="<?php echo base_url(); ?>static/images/logout_red.png" class="logo-adjuster"  title="Logout" alt="Logout" />
+        </a>
+    </div>
     
 </div>
 <div class="col-lg-12 nopadding margnbtm10" style="background-color: #869FA6; height:3px"> </div>

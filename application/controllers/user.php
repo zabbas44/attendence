@@ -12,16 +12,25 @@ class User extends CI_Controller {
             
             $this->load->view('user/base');
 	}
-        public function maddevz()
+        public function user_atten()
         {
            $this->load->view('user/base');
         }
-//        public function home()
-//        {
-//            $this->load->model("sample");
-//            $this->sample->get();
-//        }
-// 
+        public function view_prev_atten()
+        {
+           $this->load->view('user/base');
+        }
+        public function password_changed()
+        {
+           $this->load->view('user/base');
+        }
+        public function reset_password()
+        {
+           $this->load->view('user/base');
+        }
+        
+        
+ 
         
 }
 

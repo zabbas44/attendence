@@ -22,7 +22,17 @@ class sadmin extends CI_Controller {
         public function view_log()
         {
             $this->load->view('sadmin/base');
-        }        
+        }
+        public function password_changed()
+        {
+            $this->load->view('sadmin/base');
+        }
+        public function reset_password()
+        {
+            $this->load->view('sadmin/base');
+        }
+        
+        
         
 
         

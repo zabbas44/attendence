@@ -19,7 +19,7 @@ function validateForm() {
                         <h3 class="panel-title"><b>User Login</b></h3>
                     </div>
                     <div class="panel-body">
-                        <form action="" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
+                        <form action="<?php echo base_url(); ?>user/user_atten" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
                         <div class="admin_login_form">
                             <br>
                             <label>User Name</label>
@@ -28,15 +28,15 @@ function validateForm() {
                             <label>Password</label>
                                 <input type="password" size="20" id="password" name="password" placeholder="Password" class="form-control">
                             <br>
-
-                                                                <br>
-                                                                    <div class="forgot_pass">
-                                                                        <span>
-                                                                            <input class="btn btn-success" type="submit" value="Login" onsubmit="validateForm()">
-                                                                        </span> <a class="btn btn-danger" href="">Forgot Password?</a>
+                            <br>
+                                    <div class="forgot_pass">
+                                      
+                                      <input class="btn btn-success" type="submit" value="Login" onsubmit="validateForm()">
+                                      &nbsp;
+                                      <a class="btn btn-danger" href="<?php echo base_url();?>user/reset_password">Forgot Password?</a>
                                     </div>
                                                             </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
         </div>

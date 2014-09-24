@@ -21,11 +21,11 @@
 
                                                                 <br>
                                     <div class="forgot_pass">
-                                        <a href="<?php base_url()?>sadmin/crud">
-                                            <button class="btn btn-bg"/>Login</button>
-                                        </a>    
                                        
-                                        <a class="btn btn-danger" href="">Forgot Password?</a>
+                                        <input type="submit" class="btn btn-bg" value="Login" />
+                                          
+                                        &nbsp;
+                                        <a class="btn btn-danger" href="<?php echo base_url();?>sadmin/reset_password">Forgot Password?</a>
                                     </div>
                                                             </div>
                     </form>
