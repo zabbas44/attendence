@@ -1,6 +1,6 @@
 <div class="cotainer marginlr30">
 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="background: whitesmoke">
-        <thead>
+    <thead class="table-header">
             <tr>
                 
                 <th>Name</th>
@@ -34,10 +34,10 @@
                     <option value="internee1">internee</option>
                     </select>
                 </td>
-                <td><input type="text" class="form-control"/></td>
-                <td><input type="text" class="form-control"/></td>
-                <td><input type="text" class="form-control"/></td>
-                <td><input type="text" class="form-control"/></td>
+                <td><input type="text" class="form-control" id="cdate" name="cdate" /></td>
+                <td><input type="text" class="form-control" id="stime" name="stime" /></td>
+                <td><input type="text" class="form-control" id="etime" name="etime" /></td>
+                <td><input type="text" class="form-control" id="ttime" name="ttime" /></td>
                 
                 
             </tr>  

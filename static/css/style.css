@@ -67,5 +67,10 @@ body {
     margin-left: 30px;
     margin-right: 30px;
 }
-
-
+.table-header
+{
+font-size: 20px;
+font-style: initial; color: white; 
+background-color: #68838b;
+    
+}

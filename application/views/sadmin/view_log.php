@@ -1,6 +1,6 @@
 <div class="cotainer marginlr30">
 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="background: whitesmoke">
-        <thead>
+    <thead  class="table-header">
             <tr>
                 <th>Serial #</th>
                 <th>Name</th>
@@ -15,38 +15,24 @@
             </tr>
         </thead>
         <tbody>
+            <?php 
+             foreach ($results as $key => $result) {
+            ?>
             <tr>
-                <td>1</td>
-                <td>danish</td>
-                <td>senior Developer</td>
-                <td>13-13-13</td>
-                <td>23-9-14</td>
-                <td>1pm</td>
-                <td>10pm</td>
-                <td>9</td>
-<!--                <td>     
-        <div class="row">
-    <div class="col-lg-12" >
-    <button class="btn btn-success  " onsubmit="">Edit</button>
-    &nbsp;
-    <button class="btn btn-danger" onsubmit="" >Delete</button>
-    </div>
-</div>
-                </td>-->
-      </tr>  
-</tbody>
- 
-<!--        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>-->
-    </table>
+                <td><?=$result->u_id;?></td>
+                <td><?=$result->u_name;?></td>
+                <td><?=$result->u_designation;?></td>
+                <td><?=$result->u_joindate;?></td>
+                <td><?=$result->u_cdate;?></td>
+                <td><?=$result->u_stime;?></td>
+                <td><?=$result->u_etime;?></td>
+                <td><?=$result->u_thours;?></td>
+
+            </tr>  
+         <?php }
+            ?>
+        </tbody>
+     </table>
 <div class="row">
     <div class="col-lg-12" >
     <a href="<?php echo base_url(); ?>sadmin/crud">

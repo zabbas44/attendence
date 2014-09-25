@@ -4,8 +4,8 @@
        
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
-<div class="panel panel-info">
-                    <div class="panel-heading">
+<div class="panel ">
+                    <div class="panel-heading table-header">
                         <h3 class="panel-title"><b>Admin Login</b></h3>
                     </div>
                     <div class="panel-body">
@@ -22,7 +22,7 @@
                                                                 <br>
                                     <div class="forgot_pass">
                                        
-                                        <input type="submit" class="btn btn-bg" value="Login" />
+                                        <input type="submit" class="btn btn-success" value="Login" />
                                           
                                         &nbsp;
                                         <a class="btn btn-danger" href="<?php echo base_url();?>sadmin/reset_password">Forgot Password?</a>

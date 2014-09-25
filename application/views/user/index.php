@@ -14,8 +14,8 @@ function validateForm() {
        
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
-<div class="panel panel-info">
-                    <div class="panel-heading">
+<div class="panel ">
+                    <div class="panel-heading table-header ">
                         <h3 class="panel-title"><b>User Login</b></h3>
                     </div>
                     <div class="panel-body">

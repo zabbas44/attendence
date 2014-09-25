@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class user extends CI_Controller {
 
         public function __construct() {
          parent::__construct();
@@ -10,7 +10,7 @@ class User extends CI_Controller {
 	public function index()
 	{
             
-            $this->load->view('user/base');
+           $this->load->view('user/base');
 	}
         public function user_atten()
         {
@@ -18,7 +18,9 @@ class User extends CI_Controller {
         }
         public function view_prev_atten()
         {
-           $this->load->view('user/base');
+           $this->load->model('user_m');
+           $data['results']=$this->user_m->getall();
+           $this->load->view('user/base',$data);
         }
         public function password_changed()
         {

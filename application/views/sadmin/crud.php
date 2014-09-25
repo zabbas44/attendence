@@ -1,43 +1,43 @@
 <div class="cotainer marginlr30">
+    <form action="<?php base_url()?>sadmin/add_user">
 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="background: whitesmoke">
-        <thead>
+    
+    <thead class="table-header">
             <tr>
-                <th>Serial #</th>
-                <th>Name</th>
-                <th>Designation</th>
-                <th>Joining Date</th>
-                <th>Action</th>
-                
+                <td>Serial #</td>
+                <td>Name</td>
+                <td>Designation</td>
+                <td>Joining Date</td>
+                <td>Action</td>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>danish</td>
-                <td>senior developer</td>
-                <td>13-13-13</td>
-                <td>     
-        <div class="row">
-    <div class="col-lg-12" >
-    <button class="btn btn-success  " onsubmit="">Edit</button>
-    &nbsp;
-    <button class="btn btn-danger" onsubmit="" >Delete</button>
-    </div>
-</div></td>
-      </tr>  
-</tbody>
- 
-<!--        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>-->
+    </thead>
+    <tbody>
+                 <?php 
+                 foreach ($results as $key => $result) {
+                 ?>
+
+                <tr>
+                    <td><?=$result->u_id;?> </td>
+                    <td><?=$result->u_name;?></td>
+                    <td><?=$result->u_designation;?></td>
+                    <td><?=$result->u_joindate;?></td>
+                    <td>     
+                        <div class="row">
+                            <div class="col-lg-12" >
+                                <button class="btn btn-success  " onsubmit="">Edit</button>
+                                &nbsp;
+                                
+                                <a href="<?php base_url()?>sadmin" class="btn btn-danger" >Delete</a>
+                            </div>
+                        </div></td>
+                </tr> 
+               
+            <?php }
+            ?>
+    </tbody>        
+
     </table>
+    </form>
 <div class="row">
     <div class="col-lg-12" >
     <button class="btn btn-success" >Submit Changes</button>
