@@ -19,25 +19,23 @@
              foreach ($results as $key => $result) {
             ?>
             <tr>
-                <td><?=$result->u_id;?></td>
-                <td><?=$result->u_name;?></td>
-                <td><?=$result->u_designation;?></td>
-                <td><?=$result->u_joindate;?></td>
-                <td><?=$result->u_cdate;?></td>
-                <td><?=$result->u_stime;?></td>
-                <td><?=$result->u_etime;?></td>
-                <td><?=$result->u_thours;?></td>
+                <td><? echo $result->u_id;?></td>
+                <td><? echo $result->u_name;?></td>
+                <td><? echo $result->u_designation;?></td>
+                <td><? echo $result->u_joindate;?></td>
+                <td><? echo $result->u_cdate;?></td>
+                <td><? echo $result->u_stime;?></td>
+                <td><? echo $result->u_etime;?></td>
+                <td><? echo $result->u_thours;?></td>
 
             </tr>  
          <?php }
             ?>
+            <tr>
+                <td colspan="8" style="background-color: #68838b">
+                    <a href="<?php echo base_url(); ?>sadmin/crud" class="btn btn-primary">Back To Admin</a>
+                </td>
+            </tr>
         </tbody>
      </table>
-<div class="row">
-    <div class="col-lg-12" >
-    <a href="<?php echo base_url(); ?>sadmin/crud">
-    <button class="btn btn-primary">Back To Admin</button>
-    </a>
-    </div>
-</div>
 </div>

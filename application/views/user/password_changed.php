@@ -36,9 +36,9 @@
 
             <form action="<?php echo base_url(); ?>user/user_atten" method="post" id="password_changed">
 
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">User Password Changed</h3>
+                        <div class="panel">
+                            <div class="panel-heading table-header">
+                                <h3 class="panel-title"><b>User Password Changed</b></h3>
                             </div>
                             <div class="panel-body">
                                 <div class="admin_login_form">

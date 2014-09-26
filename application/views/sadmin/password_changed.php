@@ -36,9 +36,9 @@
 
             <form action="<?php echo base_url(); ?>sadmin/crud" method="post" id="password_changed">
 
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Admin Password Changed</h3>
+                        <div class="panel">
+                            <div class="panel-heading table-header">
+                                <h3 class="panel-title"><b>Admin Password Changed</b></h3>
                             </div>
                             <div class="panel-body">
                                 <div class="admin_login_form">

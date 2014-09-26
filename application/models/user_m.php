@@ -28,10 +28,12 @@ class user_m extends CI_model{
      * function to delete data to db 
      */
 
-    function delete($data)
+     // Function to Delete selected record from table name students.
+    function delete($id)
     {
-    $this->db->delete("add_users",$data);   
-    }
+    $this->db->where('u_id', $id);
+    $this->db->delete('user_m');
+    }   
     
 
 }

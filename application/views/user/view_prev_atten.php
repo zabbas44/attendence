@@ -28,13 +28,12 @@
       </tr> 
         <?php }
             ?>   
+      <tr>
+          <td colspan="7" style="background-color: #68838b">
+              <a href="<?php echo base_url(); ?>user/user_atten" class="btn btn-primary">Back</a>
+          </td>
+      </tr>
         </tbody>
     </table>
-<div class="row">
-    <div class="col-lg-12" >
-    <a href="<?php echo base_url(); ?>user/user_atten">
-    <button class="btn btn-primary">Back</button>
-    </a>
-    </div>
-</div>
+
 </div>

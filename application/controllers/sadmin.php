@@ -51,6 +51,14 @@ class sadmin extends CI_Controller {
         {
             $this->load->view('sadmin/base');
         }
+        public function edit_record()
+        {
+            $this->load->view('sadmin/base');
+        }
+        public function delete_record()
+        {
+            $this->load->view('sadmin/base');
+        }
 
        
 //        function deletevalues( )

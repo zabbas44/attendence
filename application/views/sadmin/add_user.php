@@ -21,7 +21,7 @@
             
             <tr>
                 
-                <td colspan="3">
+                <td colspan="3" class="table-footer">
                         
                     <input type="submit" value="Submit Changes" class="btn btn-success" />
                     &nbsp;
