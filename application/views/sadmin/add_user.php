@@ -6,8 +6,6 @@
                 <th>Name</th>
                 <th>Designation</th>
                 <th>Joining Date</th>
-
-                                
             </tr>
         </thead>
 <tbody>
@@ -16,7 +14,6 @@
                 <td><input type="text" class="form-control" id="name" name="name" placeholder="Type name of user"/></td>
                 <td><input type="text" class="form-control" id="desig" name="desig" placeholder="Type designation of user"/></td>
                 <td><input type="text" class="form-control" id="jdate" name="jdate" placeholder="Type joining date of user"/></td>
-                
             </tr>  
             
             <tr>

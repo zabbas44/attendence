@@ -18,9 +18,8 @@ class user extends CI_Controller {
             $data = array(
                             'u_name' => $this->input->post('uname'),
                             'u_designation' => $this->input->post('desig'),
-                            'u_cdate' => $this->input->post('cdate'),
-                            'u_stime' => $this->input->post('stime'),
-                            'u_etime' => $this->input->post('etime'),
+                            'u_sdtime' => $this->input->post('sdtime'),
+                            'u_edtime' => $this->input->post('edtime'),
                             'u_thours' => $this->input->post('thours')
                             );
             

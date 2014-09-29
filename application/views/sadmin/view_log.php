@@ -6,9 +6,8 @@
                 <th>Name</th>
                 <th>Designation</th>
                 <th>Joining Date</th>
-                <th>Date</th>
-                <th>Start Time</th>
-                <th>End Time</th>
+                <th>Start Date and Time</th>
+                <th>End Date and Time</th>
                 <th>Total Hours</th>
                 
                                 
@@ -23,9 +22,8 @@
                 <td><? echo $result->u_name;?></td>
                 <td><? echo $result->u_designation;?></td>
                 <td><? echo $result->u_joindate;?></td>
-                <td><? echo $result->u_cdate;?></td>
-                <td><? echo $result->u_stime;?></td>
-                <td><? echo $result->u_etime;?></td>
+                <td><? echo $result->u_sdtime;?></td>
+                <td><? echo $result->u_edtime;?></td>
                 <td><? echo $result->u_thours;?></td>
 
             </tr>  

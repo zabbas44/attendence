@@ -5,9 +5,8 @@
                 <th>Days</th>
                 <th>Name</th>
                 <th>Designation</th>
-                <th>Date</th>
-                <th>Start Time</th>
-                <th>End Time</th>
+                <th>Start Date and Time</th>
+                <th>End Date and Time</th>
                 <th>Total Hours</th>
                 
                                 
@@ -15,18 +14,19 @@
         </thead>
         <tbody>
             <?php 
-             foreach ($results as $key => $result) {
+            foreach ($results as $key => $result) 
+            {
             ?>
             <tr>
                 <td><? echo $result->u_id;?></td>
                 <td><? echo $result->u_name;?></td>
                 <td><? echo $result->u_designation;?></td>
-                <td><? echo $result->u_cdate;?></td>
-                <td><? echo $result->u_stime;?></td>
-                <td><? echo $result->u_etime;?></td>
+                <td><? echo $result->u_sdtime;?></td>
+                <td><? echo $result->u_edtime;?></td>
                 <td><? echo $result->u_thours;?></td>
-      </tr> 
-        <?php }
+            </tr> 
+            <?php 
+            }
             ?>   
       <tr>
           <td colspan="7" style="background-color: #68838b">

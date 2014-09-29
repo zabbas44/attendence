@@ -24,12 +24,12 @@
                     <td>     
                         <div class="row">
                             <div class="col-lg-12" >
-                                <a href="<?php echo base_url();?>sadmin/edit_record" class="btn btn-success  " onsubmit="">Edit</a>
+                                <a href="<?php echo base_url();?>sadmin/edit_record" class="font-20 glyphicon glyphicon-pencil" title="Edit" ></a>
                                 &nbsp;
-                                
-                                <a href="<?php echo base_url();?>sadmin/delete_record" class="btn btn-danger" >Delete</a>
+                                <a href="<?php echo base_url() ?>sadmin/delete_record" class="font-red font-20 glyphicon glyphicon-trash" title="Delete"></a>
                             </div>
-                        </div></td>
+                        </div>
+                    </td>
                 </tr> 
                
             <?php }

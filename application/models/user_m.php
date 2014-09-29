@@ -29,12 +29,26 @@ class user_m extends CI_model{
      */
 
      // Function to Delete selected record from table name students.
-    function delete($id)
+//    function delete($id)
+//    {
+//    $this->db->where('u_id', $id);
+//    $this->db->delete('user_m');
+//    }   
+    // Function to Delete selected record from table name students.
+        function del($id){
+        $this->db->where('u_id', $id);
+        $this->db->delete('user_m');
+}
+    function verifyLogin($username,$pass)
     {
-    $this->db->where('u_id', $id);
-    $this->db->delete('user_m');
-    }   
-    
+        $sql_Query = "select * from admin where name='".$username."' and password='".$pass."'";
+        $query=$this->db->query($sql_Query);
+        $result_arr = $query->result();
+        if(empty($result_arr)){
+            return false;
+        }else
+        return true;
+    }
 
 }
 ?>

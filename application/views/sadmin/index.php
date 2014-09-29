@@ -16,10 +16,10 @@
                                 <input type="text" size="20" id="uname" name="uname" placeholder="Admin Name" value="" class="form-control">
                             <br>
                             <label>Password</label>
-                                <input type="password" size="20" id="password" name="password" placeholder="Password" class="form-control">
+                                <input type="password" size="20" id="pwd" name="pwd" placeholder="Password" class="form-control">
                             <br>
 
-                                                                <br>
+                                    <br>
                                     <div class="forgot_pass">
                                        
                                         <input type="submit" class="btn btn-success" value="Login" />

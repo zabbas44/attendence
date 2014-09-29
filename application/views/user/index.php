@@ -21,21 +21,21 @@ function validateForm() {
                     <div class="panel-body">
                         <form action="<?php echo base_url(); ?>user/user_atten" method="post" accept-charset="utf-8" class="form-horizontal" id="login_form" name="login_form">
                         <div class="admin_login_form">
-                            <br>
+                            <br/>
                             <label>User Name</label>
                                 <input type="text" size="20" id="uname" name="uname" placeholder="User Name" value="" class="form-control">
                             <br>
                             <label>Password</label>
                                 <input type="password" size="20" id="password" name="password" placeholder="Password" class="form-control">
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
                                     <div class="forgot_pass">
                                       
                                       <input class="btn btn-success" type="submit" value="Login" onsubmit="validateForm()">
                                       &nbsp;
                                       <a class="btn btn-danger" href="<?php echo base_url();?>user/reset_password">Forgot Password?</a>
                                     </div>
-                                                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/bootstrap-3.2/css/bootstrap.min.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/style.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/sadmin.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="<?php echo base_url(); ?>static/data-tables/DT_bootstrap.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="<?php echo base_url(); ?>static/data-tables/select2_metro.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>static/bootstrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>static/datepicker.css" type="text/css" media="screen"/>
 
 
 </head>
@@ -26,11 +26,8 @@
 
     <script src="('<?php echo base_url(); ?>static/js/jquery.min.js')" type='text/javascript'>></script>
     <script src="('<?php echo base_url(); ?>static/bootstrap/js/bootstrap.js')"  type='text/javascript'></script>
-<script src="('<?php echo base_url(); ?>static/data-tables/app.js')"  type='text/javascript'></script>
-<script src="('<?php echo base_url(); ?>static/data-tables/DT_bootstrap.js')"  type='text/javascript'></script>
-<script src="('<?php echo base_url(); ?>static/data-tables/jquery.dataTables.js')"  type='text/javascript'></script>
-<script src="('<?php echo base_url(); ?>static/data-tables/jquery.dataTables.min.js')"  type='text/javascript'></script>
-<script src="('<?php echo base_url(); ?>static/data-tables/select2.min.js')"  type='text/javascript'></script>
+    <script src="('<?php echo base_url(); ?>static/jquery-1.9.1.min.js')"  type='text/javascript'></script>
+    <script src="('<?php echo base_url(); ?>static/bootstrap-datepicker.js')"  type='text/javascript'></script>
     <?php
     $this->load->view('sadmin/footer');
     ?>

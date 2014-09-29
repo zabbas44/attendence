@@ -27,7 +27,7 @@ class sadmin extends CI_Controller {
                             'u_name' => $this->input->post('name'),
                             'u_designation' => $this->input->post('desig'),
                             'u_joindate' => $this->input->post('jdate')
-                            );
+                          );
             
 
             
@@ -58,6 +58,12 @@ class sadmin extends CI_Controller {
         public function delete_record()
         {
             $this->load->view('sadmin/base');
+            // Function to Delete selected record from database.
+            function del() {
+            $id = $this->uri->segment(3);
+            $this->delete_model->delete_u_id($id);
+            $this->show_u_id();
+}
         }
 
        
@@ -71,12 +77,24 @@ class sadmin extends CI_Controller {
 //                   echo"deleted";
 //       }
 
+        public function veri()
+    {
+      /* print_r($this->input->post()); */
+//       echo"successful";
+       $username= $this->input->post('uname');
+       $pass= $this->input->post('pwd');
+       $this->load->model('user_m');
+       $res=$this->user_m->verifyLogin($username,$pass);
+       if($res){
+           echo 'Login Successfull';
+       }
+     else {
+         echo 'Go back.';
+          }
         
 }
 
 
 
+}
 
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
