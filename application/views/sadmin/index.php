@@ -13,20 +13,25 @@
                         <div class="admin_login_form">
                             <br>
                             <label>Admin Name</label>
-                                <input type="text" size="20" id="uname" name="uname" placeholder="Admin Name" value="" class="form-control">
+                                <input type="text" size="20" id="uname" name="aname" placeholder="Admin Name" value="" class="form-control">
                             <br>
                             <label>Password</label>
                                 <input type="password" size="20" id="pwd" name="pwd" placeholder="Password" class="form-control">
                             <br>
-
+                            
+                            <?php if(!empty($msg)){ ?>
+                            <div class="alert alert-danger"><?php echo $msg; ?></div>
+                            <?php }  ?>
+                            
                                     <br>
                                     <div class="forgot_pass">
                                        
                                         <input type="submit" class="btn btn-success" value="Login" />
-                                          
+                                     
                                         &nbsp;
-                                        <a class="btn btn-danger" href="<?php echo base_url();?>sadmin/reset_password">Forgot Password?</a>
+                                  <a class="btn btn-danger" href="<?php echo base_url();?>sadmin/reset_password">Forgot Password?</a>
                                     </div>
+                                   
                                                             </div>
                     </form>
                     </div>

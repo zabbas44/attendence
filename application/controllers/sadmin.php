@@ -3,23 +3,41 @@
 class sadmin extends CI_Controller {
 
         public function __construct() {
-         parent::__construct();
-          
+            parent::__construct();
+            $this->load->model('user_m');
+            $this->load->model('admin_model');
         }
-        
+       
 	public function index()
 	{   
-            $this->load->view('sadmin/base');
+            $data['msg']  = $this->input->get_post('msg');
+            $this->load->view('sadmin/base',$data);
 	}
         public function crud()
         {
-
-            $this->load->model('user_m');
-            $data['results']=$this->user_m->getall();
-            $this->load->view('sadmin/base',$data);
+            $username = $this->input->post('aname');
+            $pass     = $this->input->post('pwd');
             
-           
+            $condition = array(
+                'a_name' => $username,
+                'a_pass' => $pass
+            );
+            
+            if($this->admin_model->get($condition)){
+                
+                $this->session->set_userdata('loggedin',true);
+                
+                $this->load->model('user_m');
+                $data['results']=$this->user_m->getall();
+                $this->load->view('sadmin/base',$data);
+                
+            }else{
+                
+                redirect('sadmin/index?msg=invalid login provided');
+                
+            }
         }
+        // this function insert data in users
         public function add_user()
         {
             $this->load->model('user_m');
@@ -58,12 +76,14 @@ class sadmin extends CI_Controller {
         public function delete_record()
         {
             $this->load->view('sadmin/base');
+          echo"ok";  
+            
             // Function to Delete selected record from database.
-            function del() {
+          /*  function del() {
             $id = $this->uri->segment(3);
             $this->delete_model->delete_u_id($id);
             $this->show_u_id();
-}
+}*/
         }
 
        
@@ -77,22 +97,9 @@ class sadmin extends CI_Controller {
 //                   echo"deleted";
 //       }
 
-        public function veri()
-    {
-      /* print_r($this->input->post()); */
-//       echo"successful";
-       $username= $this->input->post('uname');
-       $pass= $this->input->post('pwd');
-       $this->load->model('user_m');
-       $res=$this->user_m->verifyLogin($username,$pass);
-       if($res){
-           echo 'Login Successfull';
-       }
-     else {
-         echo 'Go back.';
-          }
+       
         
-}
+
 
 
 

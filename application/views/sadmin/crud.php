@@ -17,16 +17,16 @@
                  ?>
 
                 <tr>
-                    <td><? echo $result->u_id;?> </td>
-                    <td><? echo $result->u_name;?></td>
-                    <td><? echo $result->u_designation;?></td>
-                    <td><? echo $result->u_joindate;?></td>
+                    <td><?php echo $result->u_id;?> </td>
+                    <td><?php echo $result->u_name;?></td>
+                    <td><?php echo $result->u_designation;?></td>
+                    <td><?php echo $result->u_joindate;?></td>
                     <td>     
                         <div class="row">
                             <div class="col-lg-12" >
-                                <a href="<?php echo base_url();?>sadmin/edit_record" class="font-20 glyphicon glyphicon-pencil" title="Edit" ></a>
+                                <a href="<?php echo base_url();?>sadmin/edit_record/<?php echo $result->u_id;  ?>" class="font-20 glyphicon glyphicon-pencil" title="Edit" ></a>
                                 &nbsp;
-                                <a href="<?php echo base_url() ?>sadmin/delete_record" class="font-red font-20 glyphicon glyphicon-trash" title="Delete"></a>
+                                <a href="<?php echo base_url() ?>sadmin/delete_record/<?php echo $result->u_id; ?>" class="font-red font-20 glyphicon glyphicon-trash" title="Delete"></a>
                             </div>
                         </div>
                     </td>
